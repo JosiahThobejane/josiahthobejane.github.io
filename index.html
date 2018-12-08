@@ -56,15 +56,14 @@
 			<div class="container">
 			<div class="navbar-brand">
 				<a class="navbar-item" href="/">
-					Josiah Thobejane
+					<span class="title is-4">Josiah Thobejane</span>
 				<!--<img src="img/mf-logo.svg" alt="Josiah Thobejane | Java Developer, Designer &amp; Mentor" height="48">-->
 				</a>
 			</div>
 			<div class="navbar-menu" id="navMenu">
-				<div class="navbar-end">					
-					<div class="navbar-item">
-						<!-- is-primary is-outlined is-rounded -->
-						<p class="control"><a class="button is-dark is-rounded" href="#"><span>Say Hello</span></a></p>
+				<div class="navbar-end">									
+					<div class="navbar-item">						
+						<p class="control"><a class="button is-dark " href="#" id="sayHelloButton"><span>Say Hello</span></a></p>
 					</div>					
 				</div>
 			</div>
@@ -78,6 +77,29 @@
 					<div class="column">
 						<h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Java Developer &amp; Designer</h1>
 						<h2 class="subtitle is-size-4-desktop">I love to code and design simple things.</h2>
+
+						<p class="buttons is-centered">
+							<a class="button is-info" href="https://linkedin.com/in/JosiahThobejane" target="_blank">
+								<span class="icon">
+									<i class="fab fa-linkedin"></i>
+								</span>
+								<span>Linkedin</span>
+							</a>
+
+							<a class="button is-dark" href="https://github.com/JosiahThobejane" target="_blank">
+								<span class="icon">
+									<i class="fab fa-github"></i>
+								</span>
+								<span>GitHub</span>
+							</a>
+							
+							<a class="button is-info" href="https://twitter.com/JosiahThobejane" target="_blank">
+								<span class="icon">
+									<i class="fab fa-twitter"></i>
+								</span>
+								<span>Twitter</span>
+							</a>
+						</p>
 					</div>
 					</div>
 				</div>
@@ -85,21 +107,65 @@
 		</section>
 
 		<!-- contact me modal-->
-		<div class="modal">
+		<div class="modal" id="contactMeModal">
 			<div class="modal-background"></div>
 			<div class="modal-card">
 				<header class="modal-card-head">
-					<p class="modal-card-title">Modal title</p>
-					<button class="delete" aria-label="close"></button>
+					<p class="modal-card-title">Contact Me</p>
+					<button class="delete" aria-label="close" id="closeModal"></button>
 				</header>
 				<section class="modal-card-body">
-					  <!-- Content ... -->
+					<div class="columns">
+						<div class="column is-6">
+							<div class="field">
+								<p class="control has-icons-left has-icons-right">
+									<input class="input" type="name" placeholder="Full Name">
+									<span class="icon is-small is-left">
+										<i class="fas fa-user"></i>
+									</span>
+									<!--<span class="icon is-small is-right">
+										<i class="fas fa-check"></i>
+									</span>-->
+								</p>
+							</div>
+						</div>
+
+						<div class="column is-6">
+							<div class="field">
+								<p class="control has-icons-left has-icons-right">
+									<input class="input" type="email" placeholder="Email">
+									<span class="icon is-small is-left">
+										<i class="fas fa-envelope"></i>
+									</span>
+									<!--<span class="icon is-small is-right">
+										<i class="fas fa-check"></i>
+									</span>-->
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="field is-horizontal">
+						<!--<div class="field-label is-normal">
+							<label class="label">Question</label>
+						</div>-->
+						<div class="field-body">
+							<div class="field">
+								<div class="control">
+									<textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+								</div>
+								<p class="help subtitle is-6">Alternatively: JosiahThobejane@Gmail.com</p>
+							</div>
+						</div>						
+					</div>
+					
 				</section>
 			<footer class="modal-card-foot">
-				<button class="button is-success">Save changes</button>
+				<button class="button is-success">SEND</button>
 				<button class="button">Cancel</button>
 			</footer>
 		</div>
+
 		<!-- Include the library. -->
 		<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
 		></script>
@@ -122,12 +188,8 @@
 	
     
 
-    <!-- JS -->
-    <!--<script type="text/javascript" src="assets/js/materialize.min.js"></script>  -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <!-- Own Js-->
-    <!--<script type="text/javascript" src="assets/js/app.js"></script>-->
-   
+    
+   <script src="assets/js/app.js"></script>
 
   </body>
 </html>
