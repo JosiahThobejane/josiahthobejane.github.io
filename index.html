@@ -51,6 +51,15 @@
 	<meta property="og:description" content="Hi, I am a 20 years old graphic designer, developer and a second year Software Development student at IIE Rosebank College.
 	Ever since my 11th Grade, I have been learning how to code and design." />
 	<meta property="og:site_name" content="Josiah Thobejane" />	
+
+	<!--Email API-->
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+	<script type="text/javascript">
+	(function(){
+		emailjs.init("user_xwZwiBf2LV1pHSSj8YGzh");
+	})();
+	</script>	
+
   </head>
 		<nav class="navbar is-transparent">
 			<div class="container">
@@ -119,7 +128,7 @@
 						<div class="column is-6">
 							<div class="field">
 								<p class="control has-icons-left has-icons-right">
-									<input class="input" type="name" placeholder="Full Name">
+									<input class="input" type="name" placeholder="Full Name" id="personName">
 									<span class="icon is-small is-left">
 										<i class="fas fa-user"></i>
 									</span>
@@ -133,7 +142,7 @@
 						<div class="column is-6">
 							<div class="field">
 								<p class="control has-icons-left has-icons-right">
-									<input class="input" type="email" placeholder="Email">
+									<input class="input" type="email" placeholder="Email" id="personEmail">
 									<span class="icon is-small is-left">
 										<i class="fas fa-envelope"></i>
 									</span>
@@ -152,7 +161,7 @@
 						<div class="field-body">
 							<div class="field">
 								<div class="control">
-									<textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+									<textarea class="textarea" placeholder="Explain how we can help you" id="personMessage"></textarea>
 								</div>
 								<p class="help subtitle is-6">Alternatively: JosiahThobejane@Gmail.com</p>
 							</div>
@@ -161,20 +170,16 @@
 					
 				</section>
 			<footer class="modal-card-foot">
-				<button class="button is-success">SEND</button>
+				<button class="button is-success" id="sendEmailButton">SEND</button>
 				<button class="button">Cancel</button>
 			</footer>
 		</div>
 
 		<!-- Include the library. -->
-		<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
-		></script>
+		<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
 
 		<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-		<link
-		rel="stylesheet"
-		href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
-		/>
+		<link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
 
 		<!-- Prepare a container for your calendar. 
 		<div class="calendar is-white">
@@ -186,9 +191,7 @@
 			GitHubCalendar(".calendar", "josiahthobejane");
 		</script>
 	
-    
-
-    
+        
    <script src="assets/js/app.js"></script>
 
   </body>
