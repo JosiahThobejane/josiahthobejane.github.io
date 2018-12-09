@@ -1,4 +1,5 @@
 var contactMeModal = document.getElementById('contactMeModal');
+var sendEmailButton = document.getElementById('sendEmailButton');
 
 //when the Say Hello button is clicked, a modal should apprear
 document.getElementById('sayHelloButton').addEventListener('click', function (){
@@ -11,8 +12,8 @@ document.getElementById('closeModal').addEventListener('click', function() {
 });
 
 //when clicked, this should send an email
-document.getElementById('sendEmailButton').addEventListener('click', function(){
-    document.getElementById('sendEmailButton').classList.toggle('is-loading');
+sendEmailButton.addEventListener('click', function(){
+    sendEmailButton.classList.toggle('is-loading');
 
     var personEmail = document.getElementById("personEmail").value;
     var personName = document.getElementById("personName").value;
@@ -26,8 +27,18 @@ document.getElementById('sendEmailButton').addEventListener('click', function(){
         "message_html": personMessage
      }
      
-     var service_id = "default_service";
-     var template_id = "template_Ax2BBqG2";
-     emailjs.send(service_id,template_id,template_params);
-   
+    var service_id = "default_service";
+    var template_id = "template_Ax2BBqG2";
+
+    setTimeout(sendMessage, 2000);
+
+    function sendMessage()
+    {
+        emailjs.send(service_id,template_id,template_params);
+
+        sendEmailButton.classList.remove('is-loading');        
+        sendEmailButton.classList.toggle('is-danger');
+        sendEmailButton.innerHTML = "SENT!!";
+    }
+    
 });
