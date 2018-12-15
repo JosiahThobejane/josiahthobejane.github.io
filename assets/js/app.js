@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         contactMeModal.classList.toggle('modal-close');
     });
 
+    
     //when clicked, this should send an email
     sendEmailButton.addEventListener('click', function(){
         sendEmailButton.classList.toggle('is-loading');
@@ -48,4 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('menuToggleButton').addEventListener('click', function(){
         document.getElementById('menuToggleButton').classList.toggle('is-active');
     });
+
+    
 });
