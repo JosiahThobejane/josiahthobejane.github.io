@@ -10,7 +10,7 @@ document.getElementById('sayHelloButton').addEventListener('click', function (){
 document.getElementById('closeModal').addEventListener('click', function() {
     contactMeModal.classList.toggle('modal-close');
 });
-
+jfff
 //when clicked, this should send an email
 sendEmailButton.addEventListener('click', function(){
     sendEmailButton.classList.toggle('is-loading');
@@ -30,10 +30,10 @@ sendEmailButton.addEventListener('click', function(){
     var service_id = "default_service";
     var template_id = "template_Ax2BBqG2";
 
+    //wait to seconds before executing the sendMessage() function
     setTimeout(sendMessage, 2000);
 
-    function sendMessage()
-    {
+    function sendMessage() {
         emailjs.send(service_id,template_id,template_params);
 
         sendEmailButton.classList.remove('is-loading');        
