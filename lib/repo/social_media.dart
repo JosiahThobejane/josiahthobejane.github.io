@@ -7,24 +7,24 @@ class SocialMediaRepo {
     SocialMediaButtonModel(
       title: "LinkedIn",
       icon: Icon(EvaIcons.linkedin),
-      color: Colors.blue,
+      color: Color.fromRGBO(62, 142, 208, 1),
       redirectUrl: "redirectUrl"),
     SocialMediaButtonModel(
       title: "Github",
       icon: Icon(EvaIcons.github),
-      color: Colors.black,
+      color:Color.fromRGBO(20, 28, 58, 1),
       redirectUrl: "redirectUrl"
     ),
       SocialMediaButtonModel(
       title: "Portfolio",
       icon: Icon(EvaIcons.heart),
-      color: Colors.white54,
+      color: Color.fromRGBO(0, 0, 0, 0.7),
       redirectUrl: "redirectUrl"
     ),
       SocialMediaButtonModel(
       title: "Twitter",
       icon: Icon(EvaIcons.twitter),
-      color: Colors.blue,
+      color: Color.fromRGBO(62, 142, 208, 1),
       redirectUrl: "redirectUrl"
     ),
   ];

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:website/model/social_media.dart';
 import 'package:website/repo/social_media.dart';
-import 'package:website/view/widgets/social_media_button.dart';
+import 'package:website/view/widgets/social_media_button_full.dart';
 
 class DesktopHome extends StatelessWidget {
   DesktopHome({Key? key}) : super(key: key);
@@ -27,6 +27,7 @@ class DesktopHome extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               'Mobile Developer',
@@ -46,18 +47,22 @@ class DesktopHome extends StatelessWidget {
                   color: Color.fromRGBO(20, 28, 59, 1)
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                for(SocialMediaButtonModel buttonModel in socialMediaRepo.buttons) ... [
-                  SocialMediaButton(
-                    title: buttonModel.title,
-                    color: buttonModel.color,
-                    icon: buttonModel.icon,
-                    redirectUrl: buttonModel.redirectUrl,
-                  )
+            SizedBox(
+              width: MediaQuery.of(context).size.width * 0.50,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  for(SocialMediaButtonModel buttonModel in socialMediaRepo.buttons) ... [
+                    SocialMediaButtonFull(
+                      title: buttonModel.title,
+                      color: buttonModel.color,
+                      icon: buttonModel.icon,
+                      redirectUrl: buttonModel.redirectUrl,
+                    )
+                  ],
                 ],
-              ],
+              ),
             )
           ],
         ),
