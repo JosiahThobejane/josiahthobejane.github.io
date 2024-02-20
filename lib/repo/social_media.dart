@@ -6,24 +6,24 @@ class SocialMediaRepo {
   List<SocialMediaButtonModel> buttons = [
     SocialMediaButtonModel(
       title: "LinkedIn",
-      icon: Icon(EvaIcons.linkedin),
+      icon: Icon(EvaIcons.linkedin, color: Colors.white,),
       color: Color.fromRGBO(62, 142, 208, 1),
       redirectUrl: "redirectUrl"),
     SocialMediaButtonModel(
       title: "Github",
-      icon: Icon(EvaIcons.github),
+      icon: Icon(EvaIcons.github, color: Colors.white,),
       color:Color.fromRGBO(20, 28, 58, 1),
       redirectUrl: "redirectUrl"
     ),
       SocialMediaButtonModel(
       title: "Portfolio",
-      icon: Icon(EvaIcons.heart),
-      color: Color.fromRGBO(0, 0, 0, 0.7),
+      icon: Icon(EvaIcons.code, color: Colors.white,),
+      color: Color.fromRGBO(195, 195, 195, 1),
       redirectUrl: "redirectUrl"
     ),
       SocialMediaButtonModel(
       title: "Twitter",
-      icon: Icon(EvaIcons.twitter),
+      icon: Icon(EvaIcons.twitter, color: Colors.white,),
       color: Color.fromRGBO(62, 142, 208, 1),
       redirectUrl: "redirectUrl"
     ),
