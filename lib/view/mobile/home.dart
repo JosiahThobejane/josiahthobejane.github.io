@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gutter/flutter_gutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:website/model/social_media.dart';
 import 'package:website/repo/social_media.dart';
@@ -38,6 +39,7 @@ class MobileHome extends StatelessWidget {
                 color: Color.fromRGBO(20, 28, 59, 1)
               ),
             ),
+            Gutter(),
             Text(
                 'Lover of Bots, finding Flutter amazing 👨🏿‍💻💙',
                 style: GoogleFonts.mulish(
@@ -47,6 +49,7 @@ class MobileHome extends StatelessWidget {
                   color: Color.fromRGBO(20, 28, 59, 1)
               ),
             ),
+            Gutter(),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

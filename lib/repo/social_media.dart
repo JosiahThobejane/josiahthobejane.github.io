@@ -12,12 +12,12 @@ class SocialMediaRepo {
       title: "LinkedIn",
       icon: Icon(EvaIcons.linkedin, color: desktopViewIconColor),
       color: Color.fromRGBO(62, 142, 208, 1),
-      redirectUrl: "redirectUrl"),
+      redirectUrl: "https://linkedin.com/in/josiahthobejane"),
     SocialMediaButtonModel(
       title: "Github",
       icon: Icon(EvaIcons.github, color: desktopViewIconColor),
       color:Color.fromRGBO(20, 28, 58, 1),
-      redirectUrl: "redirectUrl"
+      redirectUrl: "https://github.com/josiahthobejane"
     ),
       SocialMediaButtonModel(
       title: "Portfolio",
@@ -29,7 +29,7 @@ class SocialMediaRepo {
       title: "Twitter",
       icon: Icon(EvaIcons.twitter, color: desktopViewIconColor),
       color: Color.fromRGBO(62, 142, 208, 1),
-      redirectUrl: "redirectUrl"
+      redirectUrl: "https://twitter.com/josiahthobejane"
     ),
   ];
 
@@ -38,12 +38,12 @@ class SocialMediaRepo {
       title: "LinkedIn",
       icon: Icon(EvaIcons.linkedin, color: mobileViewIconColor),
       color: Color.fromRGBO(62, 142, 208, 1),
-      redirectUrl: "redirectUrl"),
+      redirectUrl: "https://linkedin.com/in/josiahthobejane"),
     SocialMediaButtonModel(
       title: "Github",
       icon: Icon(EvaIcons.github, color: mobileViewIconColor),
       color:Color.fromRGBO(20, 28, 58, 1),
-      redirectUrl: "redirectUrl"
+      redirectUrl: "https://github.com/josiahthobejane"
     ),
       SocialMediaButtonModel(
       title: "Portfolio",
@@ -55,7 +55,7 @@ class SocialMediaRepo {
       title: "Twitter",
       icon: Icon(EvaIcons.twitter, color: mobileViewIconColor,),
       color: Color.fromRGBO(62, 142, 208, 1),
-      redirectUrl: "redirectUrl"
+      redirectUrl: "https://twitter.com/josiahthobejane"
     ),
   ];
 }

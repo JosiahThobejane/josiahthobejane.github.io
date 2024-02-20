@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SocialMediaButtonFull extends StatelessWidget {
   final String title, redirectUrl;
@@ -14,7 +15,13 @@ class SocialMediaButtonFull extends StatelessWidget {
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(color)
       ),
-      onPressed: () {},
+      onPressed: () async {
+        final Uri _url = Uri.parse(redirectUrl);
+
+        if (!await launchUrl(_url)) {
+          throw Exception('Could not launch $_url');
+        }
+      },
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
