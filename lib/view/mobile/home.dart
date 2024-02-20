@@ -50,7 +50,7 @@ class MobileHome extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                for(SocialMediaButtonModel buttonModel in socialMediaRepo.buttons) ... [
+                for(SocialMediaButtonModel buttonModel in socialMediaRepo.mobileButtons) ... [
                   SocialMediaButton(
                     title: buttonModel.title,
                     color: buttonModel.color,

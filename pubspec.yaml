@@ -32,6 +32,7 @@ dependencies:
     sdk: flutter
   eva_icons_flutter: ^3.1.0
   google_fonts: ^6.1.0
+  flutter_gutter: ^1.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
