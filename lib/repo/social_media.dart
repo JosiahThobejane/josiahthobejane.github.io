@@ -23,7 +23,7 @@ class SocialMediaRepo {
       title: "Portfolio",
       icon: Icon(EvaIcons.code, color: desktopViewIconColor),
       color: Color.fromRGBO(195, 195, 195, 1),
-      redirectUrl: "redirectUrl"
+      redirectUrl: "https://josiahthobejane.com/portfolio"
     ),
       SocialMediaButtonModel(
       title: "Twitter",
@@ -49,7 +49,7 @@ class SocialMediaRepo {
       title: "Portfolio",
       icon: Icon(EvaIcons.code, color: mobileViewIconColor,),
       color: Color.fromRGBO(195, 195, 195, 1),
-      redirectUrl: "redirectUrl"
+      redirectUrl: "https://josiahthobejane.com/portfolio"
     ),
       SocialMediaButtonModel(
       title: "Twitter",
