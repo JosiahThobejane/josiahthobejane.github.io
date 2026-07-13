@@ -30,8 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  eva_icons_flutter: ^3.1.0
-  google_fonts: ^6.1.0
+  font_awesome_flutter: ^10.7.0
+  google_fonts: ^6.3.2
   flutter_gutter: ^1.0.0
   url_launcher: ^6.2.4
 
