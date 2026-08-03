@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class SocialMediaButtonModel {
   late String title;
-  late Icon icon;
+  late Widget icon;
   late Color color;
   late String redirectUrl;
 

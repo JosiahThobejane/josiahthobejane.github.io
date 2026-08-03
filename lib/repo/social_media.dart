@@ -10,24 +10,24 @@ class SocialMediaRepo {
   List<SocialMediaButtonModel> desktopButtons = [
     SocialMediaButtonModel(
       title: "LinkedIn",
-      icon: Icon(FontAwesomeIcons.linkedin, color: desktopViewIconColor),
+      icon: FaIcon(FontAwesomeIcons.linkedin, color: desktopViewIconColor),
       color: Color.fromRGBO(62, 142, 208, 1),
       redirectUrl: "https://linkedin.com/in/josiahthobejane"),
     SocialMediaButtonModel(
       title: "Github",
-      icon: Icon(FontAwesomeIcons.github, color: desktopViewIconColor),
+      icon: FaIcon(FontAwesomeIcons.github, color: desktopViewIconColor),
       color:Color.fromRGBO(20, 28, 58, 1),
       redirectUrl: "https://github.com/josiahthobejane"
     ),
       SocialMediaButtonModel(
       title: "Portfolio",
-      icon: Icon(FontAwesomeIcons.code, color: desktopViewIconColor),
+      icon: FaIcon(FontAwesomeIcons.code, color: desktopViewIconColor),
       color: Color.fromRGBO(195, 195, 195, 1),
       redirectUrl: "https://josiahthobejane.com/portfolio"
     ),
       SocialMediaButtonModel(
       title: "Twitter",
-      icon: Icon(FontAwesomeIcons.twitter, color: desktopViewIconColor),
+      icon: FaIcon(FontAwesomeIcons.twitter, color: desktopViewIconColor),
       color: Color.fromRGBO(62, 142, 208, 1),
       redirectUrl: "https://twitter.com/josiahthobejane"
     ),
@@ -36,24 +36,24 @@ class SocialMediaRepo {
     List<SocialMediaButtonModel> mobileButtons = [
     SocialMediaButtonModel(
       title: "LinkedIn",
-      icon: Icon(FontAwesomeIcons.linkedin, color: mobileViewIconColor),
+      icon: FaIcon(FontAwesomeIcons.linkedin, color: mobileViewIconColor),
       color: Color.fromRGBO(62, 142, 208, 1),
       redirectUrl: "https://linkedin.com/in/josiahthobejane"),
     SocialMediaButtonModel(
       title: "Github",
-      icon: Icon(FontAwesomeIcons.github, color: mobileViewIconColor),
+      icon: FaIcon(FontAwesomeIcons.github, color: mobileViewIconColor),
       color:Color.fromRGBO(20, 28, 58, 1),
       redirectUrl: "https://github.com/josiahthobejane"
     ),
       SocialMediaButtonModel(
       title: "Portfolio",
-      icon: Icon(FontAwesomeIcons.code, color: mobileViewIconColor,),
+      icon: FaIcon(FontAwesomeIcons.code, color: mobileViewIconColor,),
       color: Color.fromRGBO(195, 195, 195, 1),
       redirectUrl: "https://josiahthobejane.com/portfolio"
     ),
       SocialMediaButtonModel(
       title: "Twitter",
-      icon: Icon(FontAwesomeIcons.twitter, color: mobileViewIconColor,),
+      icon: FaIcon(FontAwesomeIcons.twitter, color: mobileViewIconColor,),
       color: Color.fromRGBO(62, 142, 208, 1),
       redirectUrl: "https://twitter.com/josiahthobejane"
     ),
