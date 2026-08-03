@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting...</title>
+<meta http-equiv="refresh" content="0;url=https://firstcheck.co.za/?coupon=JOS10">
+<script>
+  // Logs the click as a GA event if gtag is loaded elsewhere on the site.
+  if (typeof gtag === 'function') {
+    gtag('event', 'referral_click', {
+      event_category: 'referral',
+      event_label: 'firstcheck',
+      value: 1
+    });
+  }
+  window.location.replace("https://firstcheck.co.za/?coupon=JOS10");
+</script>
+</head>
+<body>
+  <p>Redirecting you to FirstCheck...
+     <a href="https://firstcheck.co.za/?coupon=JOS10">Click here if you're not redirected automatically.</a>
+  </p>
+</body>
+</html>
