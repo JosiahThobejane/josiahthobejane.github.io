@@ -20,12 +20,6 @@ class SocialMediaRepo {
       redirectUrl: "https://github.com/josiahthobejane"
     ),
       SocialMediaButtonModel(
-      title: "Portfolio",
-      icon: FaIcon(FontAwesomeIcons.code, color: desktopViewIconColor),
-      color: Color.fromRGBO(195, 195, 195, 1),
-      redirectUrl: "https://josiahthobejane.com/portfolio"
-    ),
-      SocialMediaButtonModel(
       title: "Twitter",
       icon: FaIcon(FontAwesomeIcons.twitter, color: desktopViewIconColor),
       color: Color.fromRGBO(62, 142, 208, 1),
@@ -44,12 +38,6 @@ class SocialMediaRepo {
       icon: FaIcon(FontAwesomeIcons.github, color: mobileViewIconColor),
       color:Color.fromRGBO(20, 28, 58, 1),
       redirectUrl: "https://github.com/josiahthobejane"
-    ),
-      SocialMediaButtonModel(
-      title: "Portfolio",
-      icon: FaIcon(FontAwesomeIcons.code, color: mobileViewIconColor,),
-      color: Color.fromRGBO(195, 195, 195, 1),
-      redirectUrl: "https://josiahthobejane.com/portfolio"
     ),
       SocialMediaButtonModel(
       title: "Twitter",

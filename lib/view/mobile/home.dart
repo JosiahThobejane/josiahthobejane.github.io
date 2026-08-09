@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gutter/flutter_gutter.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:website/model/social_media.dart';
 import 'package:website/repo/social_media.dart';
 import 'package:website/view/widgets/social_media_button.dart';
 
@@ -53,13 +54,22 @@ class MobileHome extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                for(SocialMediaButtonModel buttonModel in socialMediaRepo.mobileButtons) ... [
+                for(int i = 0; i < socialMediaRepo.mobileButtons.length; i++) ... [
                   SocialMediaButton(
-                    title: buttonModel.title,
-                    color: buttonModel.color,
-                    icon: buttonModel.icon,
-                    redirectUrl: buttonModel.redirectUrl,
-                  )
+                    title: socialMediaRepo.mobileButtons[i].title,
+                    color: socialMediaRepo.mobileButtons[i].color,
+                    icon: socialMediaRepo.mobileButtons[i].icon,
+                    redirectUrl: socialMediaRepo.mobileButtons[i].redirectUrl,
+                  ),
+                  if (i == 1) ... [
+                    SocialMediaButton(
+                      title: 'Portfolio',
+                      color: Color.fromRGBO(195, 195, 195, 1),
+                      icon: FaIcon(FontAwesomeIcons.code, color: mobileViewIconColor),
+                      redirectUrl: '',
+                      onTap: () => context.go('/portfolio'),
+                    ),
+                  ]
                 ],
               ],
             )

@@ -6,8 +6,9 @@ class SocialMediaButtonFull extends StatelessWidget {
   final String title, redirectUrl;
   final Widget icon;
   final Color color;
+  final VoidCallback? onTap;
 
-  const SocialMediaButtonFull({Key? key, required this.title, required this.redirectUrl, required this.icon, required this.color}) : super(key: key);
+  const SocialMediaButtonFull({Key? key, required this.title, required this.redirectUrl, required this.icon, required this.color, this.onTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,13 +16,14 @@ class SocialMediaButtonFull extends StatelessWidget {
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(color)
       ),
-      onPressed: () async {
-        final Uri _url = Uri.parse(redirectUrl);
+      onPressed: onTap ??
+          () async {
+            final Uri _url = Uri.parse(redirectUrl);
 
-        if (!await launchUrl(_url)) {
-          throw Exception('Could not launch $_url');
-        }
-      },
+            if (!await launchUrl(_url)) {
+              throw Exception('Could not launch $_url');
+            }
+          },
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
